@@ -1,11 +1,32 @@
 package academic.model;
 
 /**
- * @author NIM Nama
- * @author NIM Nama
+ * @author 12S23023 Lenni Febriyani Hutape
+ * @author 12S23045 Chintya Reginauli Rajagukguk
  */
 public class Student {
+    private String id;
+    private String name;
+    private int year;
+    private String program;
+    
+    public Student(String id, String name, int year, String program) {
+        this.id = id;
+        this.name = name;
+        this.year = year;
+        this.program = program;
+    }
+    
+    public String getId() { return id; }
 
-    // class definition
+    public String getName() { return name; }
 
+    public int getYear() { return year; }
+
+    public String getProgram() { return program; }
+
+    @Override
+    public String toString() {
+        return id + "|" + name + "|" + year + "|" + program;
+    }
 }
